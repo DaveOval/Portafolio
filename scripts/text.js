@@ -64,7 +64,9 @@ class TextScramble {
     'Hello!',
     'Front-end Developer',
     'Flutter Developer',
-    'Pc Gamer'
+    'Hola!',
+    'Ai enthusiast',
+    ':D'
   ]
   
   const el = document.querySelector('.text')

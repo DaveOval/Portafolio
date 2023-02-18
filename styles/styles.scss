@@ -2,21 +2,43 @@
 @import './header/header';
 @import './nav/nav';
 @import './hero/hero';
+@import './about-me/about-me';
 
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-$color-azulGris: #29394F;
+$color-azulGris: rgb(41, 57, 79);
 
 
 html{
   scroll-behavior: smooth;
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #29394f #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #29394f;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 }
 *{
     font-family: 'Ubuntu', sans-serif;
 }
 
-// body{
- 
-// }
+body{
+ background-color: #D0DEE4;
+}
 
