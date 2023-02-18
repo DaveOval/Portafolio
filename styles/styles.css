@@ -101,6 +101,7 @@
 
 .hero__description {
   padding: 20px 0;
+  padding-bottom: 40px;
   width: 90%;
   text-align: center;
 }
