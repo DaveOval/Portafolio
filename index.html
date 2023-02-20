@@ -19,10 +19,12 @@
 
     <nav class="nav">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de mi</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Lenguajes</a></li>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about-me">Acerca de mi</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Formacion</a></li>
+            <li><a href="#">Experiencia</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
         <div class="hide">
@@ -30,17 +32,48 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <h2 class="hero__title">Bienvenido.</h2>
-        <p class="hero__description">Mi espacio para la creación: Mi portafolio personal de un desarrollador Front-end y Flutter.</p>
+    <section class="hero" id="hero">
+        <h2 class="hero__title">Hola mundo.</h2>
+        <p class="hero__description"> Bienvenido a mi portafolio en línea. Aquí puedes encontrar información sobre mis habilidades, experiencia y proyectos destacados.</p>
         <img class="hero__svg" src="./assets/dave_avatar.svg" alt="Avatar dave">
     </section>
 
-    <section class="about-me">
-        <h2 class="about-me__title">Hola ✌️</h2>
-        <h2 class="about-me__subtitle">Soy David Un placer conocerte.</h2>
-        <p class="abaout-me__text"> Un apasionado del desarrollo web y móvil. En mi portafolio encontrarás ejemplos de mi habilidad en el diseño y desarrollo de sitios web y aplicaciones móviles utilizando lenguajes de programación como HTML, CSS, JavaScript y Flutter en Dart. Me enfoco en crear soluciones creativas y funcionales que satisfagan las necesidades de mis clientes, y me esfuerzo en ofrecer un enfoque detallado y minucioso en cada aspecto del proceso de desarrollo, desde la concepción hasta la implementación. Si buscas un desarrollador comprometido, altamente capacitado y con un enfoque personalizado para llevar tu proyecto al siguiente nivel, ¡no dudes en contactarme!</p>
-        <img src="" alt="David Vazquez desarrollador web y flutter">
+    <section class="about-me" id="about-me">
+        <div class="abaout-me__container">
+            <h2 class="about-me__title">✌️</h2>
+            <h2 class="about-me__subtitle">Soy David Un placer conocerte.</h2>
+            <p class="abaout-me__text"> 
+                Soy un desarrollador principiante en Flutter y front-end, y estoy emocionado de presentar mi trabajo en este sitio web. Aquí podrás encontrar proyectos que he creado utilizando Flutter y tecnologías front-end, demostrando mi habilidad para diseñar y desarrollar aplicaciones móviles y sitios web interactivos. Espero que disfrutes explorando mi trabajo y no dudes en ponerte en contacto si tienes alguna pregunta o si estás interesado en colaborar conmigo. ¡Gracias por visitar mi portafolio en línea!
+            </p>
+        </div>
+        <div class="abaout-me__img" "></div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__card">
+            <div class="skills__svg">
+                <img src="./assets/language/html.svg" alt="">
+            </div>
+            <div class="skills__text">
+                <h3>HTML</h3>
+            </div>
+        </div>
+        <div class="skills__card">
+            <div class="skills__svg">
+                <img src="./assets/language/css.svg" alt="">
+            </div>
+            <div class="skills__text">
+                <h3>CSS</h3>
+            </div>
+        </div>
+        <div class="skills__card">
+            <div class="skills__svg">
+                <img src="./assets/language/javascript.svg" alt="">
+            </div>
+            <div class="skills__text">
+                <h3>JavaScript</h3>
+            </div>
+        </div>
     </section>
 
 

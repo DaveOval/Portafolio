@@ -3,6 +3,7 @@
 @import './nav/nav';
 @import './hero/hero';
 @import './about-me/about-me';
+@import './skills/skills';	
 
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
@@ -37,8 +38,8 @@ html{
 *{
     font-family: 'Ubuntu', sans-serif;
 }
-
 body{
  background-color: #D0DEE4;
+
 }
 
