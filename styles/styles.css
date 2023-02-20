@@ -164,11 +164,14 @@
 
 .abaout-me__img {
   height: 400px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 0 0 30px 30px;
   background-image: url(/assets/CDVH.jpg);
   background-size: cover;
   background-position: center;
+  -o-object-fit: cover\;;
+     object-fit: cover\;;
 }
 
 @media screen and (min-width: 930px) {
@@ -185,12 +188,21 @@
   }
 }
 .skills {
-  width: 90%;
-  height: 400px;
+  margin: auto;
+  width: 80%;
+  height: auto;
   padding: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
-  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.skills__title {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .skills__card {
@@ -211,8 +223,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 90%;
   width: 100%;
+  padding-bottom: 10px;
 }
 .skills__svg img {
   height: 100%;
@@ -220,7 +233,6 @@
 }
 
 .skills__text {
-  position: absolute;
   color: white;
   text-align: center;
   height: 20%;
@@ -229,15 +241,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  visibility: hidden;
 }
 
 .skills__card:hover {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 850px) {
+  .skills {
+    width: 90%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
 html {
-  scroll-behavior: smooth;
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
   /* Chrome, Edge, and Safari */
@@ -247,7 +265,7 @@ html * {
   scrollbar-color: #29394f #ffffff;
 }
 html *::-webkit-scrollbar {
-  width: 16px;
+  width: 12px;
 }
 html *::-webkit-scrollbar-track {
   background: #ffffff;
@@ -255,7 +273,7 @@ html *::-webkit-scrollbar-track {
 html *::-webkit-scrollbar-thumb {
   background-color: #29394f;
   border-radius: 10px;
-  border: 3px solid #ffffff;
+  border: 0px none #cababa;
 }
 
 * {

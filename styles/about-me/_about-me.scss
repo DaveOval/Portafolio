@@ -37,11 +37,13 @@
 }
 .abaout-me__img{
     height: 400px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 0 0 30px 30px;
     background-image: url(/assets/CDVH.jpg);
     background-size: cover;
     background-position: center;
+    object-fit: cover\;
 }
 
 @media screen and (min-width: 930px){

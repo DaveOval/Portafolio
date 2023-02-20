@@ -12,8 +12,7 @@ $color-azulGris: rgb(41, 57, 79);
 
 
 html{
-  scroll-behavior: smooth;
-  /* ===== Scrollbar CSS ===== */
+/* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: auto;
@@ -22,7 +21,7 @@ html{
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 16px;
+    width: 12px;
   }
 
   *::-webkit-scrollbar-track {
@@ -32,7 +31,7 @@ html{
   *::-webkit-scrollbar-thumb {
     background-color: #29394f;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 0px none #cababa;
   }
 }
 *{
