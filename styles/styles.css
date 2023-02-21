@@ -450,6 +450,99 @@
     justify-content: space-around;
   }
 }
+.experiencia {
+  width: 100%;
+  height: auto;
+  background-color: #29394F;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.experiencia h2 {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.experiencia__container {
+  margin: auto;
+  width: 100%;
+}
+
+.experiencia__card {
+  margin: auto;
+  width: 90%;
+  height: 500px;
+}
+
+.experiencia__img {
+  height: 50%;
+  width: 100%;
+}
+.experiencia__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.experiencia__text {
+  height: 50%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  background-color: #D0DEE4;
+  border-radius: 40px;
+  color: #29394F;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  border-bottom: 8px solid black;
+  transform: translateY(-4px);
+  font-weight: 900;
+}
+
+.button:active {
+  transform: translateY(0px);
+}
+
+@media screen and (min-width: 768px) {
+  .experiencia__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+  }
+  .experiencia__text {
+    width: 50%;
+    gap: 2rem;
+  }
+  .buttons {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 html {
   scroll-behavior: smooth;
   /* Firefox */
