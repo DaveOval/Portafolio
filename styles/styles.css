@@ -167,7 +167,7 @@
   width: 100%;
   max-width: 400px;
   border-radius: 0 0 30px 30px;
-  background-image: url(/assets/CDVH.png);
+  background-image: url(../assets/CDVH.png);
   background-size: cover;
   background-position: center;
   -o-object-fit: cover\;;
