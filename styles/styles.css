@@ -399,7 +399,7 @@
 
 .formacion__title {
   width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -468,17 +468,30 @@
 .experiencia__container {
   margin: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .experiencia__card {
   margin: auto;
-  width: 90%;
+  width: 85%;
   height: 500px;
+  overflow: hidden;
+  box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.79);
+  transition: all 0.5s ease-in-out;
+}
+
+.experiencia__card:hover {
+  transform: translateY(-10px);
 }
 
 .experiencia__img {
   height: 50%;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 .experiencia__img img {
   width: 100%;
@@ -537,9 +550,15 @@
     width: 50%;
     gap: 2rem;
   }
+  .experiencia__img {
+    width: 50%;
+  }
   .buttons {
     flex-direction: row;
     gap: 2rem;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 }
 html {

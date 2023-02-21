@@ -16,12 +16,22 @@
 .experiencia__container{
     margin: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .experiencia__card{
     margin: auto;
-    width: 90%;
-
-    height: 500px
+    width: 85%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.79);
+-webkit-box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.79);
+-moz-box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.79);
+    transition: all 0.5s ease-in-out;
+}
+.experiencia__card:hover{
+    transform: translateY(-10px);
 }
 .experiencia__img{
     height: 50%;
@@ -31,7 +41,9 @@
         height: 100%;
         object-fit: cover;
     }
+    transition: all 0.5s ease-in-out;
 }
+
 .experiencia__text{
     height: 50%;
     width: 100%;
@@ -78,11 +90,17 @@
     }
     .experiencia__text{
         width: 50%;
-        gap: 2rem;}
+        gap: 2rem;
+    }
+    .experiencia__img{
+        width: 50%;
+    }
     .buttons{
         flex-direction: row;
         gap: 2rem;
     }
-
+    .reverse{
+        flex-direction: row-reverse;
+    }
     
 }
