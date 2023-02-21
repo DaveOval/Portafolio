@@ -451,6 +451,7 @@
 }
 .experiencia {
   width: 100%;
+  padding: 5rem 0;
   height: auto;
   background-color: #29394F;
   color: white;
@@ -561,6 +562,51 @@
     flex-direction: row-reverse;
   }
 }
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 0;
+}
+.contacto h2 {
+  font-size: 2rem;
+}
+.contacto p {
+  width: 80%;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contacto__redes {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contacto__redes img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #29394F;
+  height: 200px;
+  color: white;
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
   /* Firefox */
