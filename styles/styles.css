@@ -33,6 +33,7 @@
   width: 100%;
   height: 50px;
   margin: auto;
+  z-index: 1;
   top: 0px;
   background-color: #29394F;
   display: flex;
@@ -383,6 +384,70 @@
   .hobbies__card {
     width: 350px;
     height: 200px;
+  }
+}
+.formacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.formacion__title {
+  width: 100%;
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.formacion__card {
+  border-radius: 40px;
+  height: 100%;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.formacion__card:hover {
+  box-shadow: 15px 6px 69px -17px rgba(41, 57, 79, 0.64);
+  -webkit-box-shadow: 15px 6px 69px -17px rgba(41, 57, 79, 0.64);
+  -moz-box-shadow: 15px 6px 69px -17px rgba(41, 57, 79, 0.64);
+}
+
+.formacion__img {
+  height: 70%;
+  width: 100%;
+}
+.formacion__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.formacion__img:hover img {
+  border-radius: 40px 40px 0 0;
+}
+
+.formacion__text {
+  height: 30%;
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .formacion {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 html {
