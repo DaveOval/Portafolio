@@ -313,7 +313,7 @@
     <section class="contacto" id="contacto">
         <h2>Contaco.</h2>
         <p>Puedes contactarme mediante estas redes sociales.</p>
-
+        
         <div class="contacto__redes">
             <a href="https://github.com/DaveOval" target="_blank">
                 <img src="./assets/social/github.svg" alt="boton para ir a github">
@@ -328,6 +328,35 @@
                 <img src="./assets/social/twitter-svgrepo-com.svg" alt="boton para ir twitter">
             </a>
         </div>
+        
+        <p>O puedes mandarme un correo.</p>
+
+        <form action="" class="contacto__form">
+            
+            <div class="form__group field">
+                <input type="text" name="" id="name" class="form__field" placeholder="Name">
+                <label for="name" class="form__label">Nombre</label>
+            </div>
+
+            <div class="form__group field">
+                <input type="email" name="" id="email" class="form__field" placeholder="Email">
+                <label for="email" class="form__label">Correo</label>
+            </div>
+
+            <div class="form__group field">
+                <input type="email" name="" id="asunto" class="form__field" placeholder="Asunto">
+                <label for="asunto" class="form__label">Asunto</label>
+            </div>
+
+            <div class="form__group field">
+                <textarea type="textarea" name="" id="asunto" class="form__field" placeholder="Mensaje"></textarea>
+                <label for="asunto" class="form__label">Mensaje</label>
+            </div>
+
+            <button type="reset" class="btn">Reiniciar</button>
+            <button type="submit" class="btn" disabled>Enviar</button>
+
+        </form>
     </section>
 
 
