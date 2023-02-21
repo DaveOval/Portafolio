@@ -3,7 +3,9 @@
 @import './nav/nav';
 @import './hero/hero';
 @import './about-me/about-me';
-@import './skills/skills';	
+@import './skills/skills';
+@import './hobbies/hobbies';	
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
@@ -12,7 +14,8 @@ $color-azulGris: rgb(41, 57, 79);
 
 
 html{
-/* ===== Scrollbar CSS ===== */
+  scroll-behavior: smooth;
+  
   /* Firefox */
   * {
     scrollbar-width: auto;
@@ -36,9 +39,9 @@ html{
 }
 *{
     font-family: 'Ubuntu', sans-serif;
+   
 }
 body{
- background-color: #D0DEE4;
-
+  background-color: #D0DEE4;
 }
 

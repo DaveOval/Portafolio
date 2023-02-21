@@ -215,7 +215,7 @@
   width: 200px;
   border-radius: 40px;
   padding: 30px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 .skills__svg {
@@ -247,6 +247,10 @@
   transform: scale(1.1);
 }
 
+.rotate {
+  animation: rotate 15s linear infinite;
+}
+
 @media screen and (max-width: 850px) {
   .skills {
     width: 90%;
@@ -255,8 +259,134 @@
     justify-content: flex-start;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hobbies {
+  background-color: #29394f;
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hobbies__card {
+  background-color: #D0DEE4;
+  border-radius: 40px;
+  height: 250px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s ease-in-out;
+}
+
+.hobbies__img {
+  height: 50%;
+  width: 40%;
+  transition: all 0.2s ease;
+}
+.hobbies__img img {
+  height: 100%;
+  width: auto;
+  opacity: 1;
+}
+.hobbies__img h2 {
+  opacity: 1;
+}
+
+.bike:hover {
+  background-image: url(/assets/hobbies/bike-gif.gif);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.bike:hover .hobbies__img {
+  opacity: 0;
+}
+.bike:hover h2 {
+  opacity: 0;
+}
+
+.gaming:hover {
+  background-image: url(/assets/hobbies/gaming.gif);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.gaming:hover .hobbies__img {
+  opacity: 0;
+}
+.gaming:hover h2 {
+  opacity: 0;
+}
+
+.music:hover {
+  background-image: url(/assets/hobbies/music.gif);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.music:hover .hobbies__img {
+  opacity: 0;
+}
+.music:hover h2 {
+  opacity: 0;
+}
+
+.movie:hover {
+  background-image: url(/assets/hobbies/movie.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.movie:hover .hobbies__img {
+  opacity: 0;
+}
+.movie:hover h2 {
+  opacity: 0;
+}
+
+.walk:hover {
+  background-image: url(/assets/hobbies/walk.gif);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.walk:hover .hobbies__img {
+  opacity: 0;
+}
+.walk:hover h2 {
+  opacity: 0;
+}
+
+@media screen and (min-width: 850px) {
+  .hobbies {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hobbies__card {
+    width: 350px;
+    height: 200px;
+  }
+}
 html {
-  /* ===== Scrollbar CSS ===== */
+  scroll-behavior: smooth;
   /* Firefox */
   /* Chrome, Edge, and Safari */
 }

@@ -1,0 +1,111 @@
+.hobbies{
+    background-color: #29394f;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.hobbies__card{
+    background-color: #D0DEE4;
+    border-radius: 40px;
+    height: 250px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .3s ease-in-out;
+}
+.hobbies__img{
+    height: 50%;
+    width: 40%;
+    transition: all .2s ease;
+    img{
+        height: 100%;
+        width: auto;
+        opacity: 1;
+    }
+    h2{
+        opacity: 1;
+    }
+
+}
+.bike:hover{
+    background-image: url(/assets/hobbies/bike-gif.gif);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .hobbies__img{
+        opacity: 0;
+    }
+    h2{
+        opacity: 0;
+    }
+}
+.gaming:hover{
+    background-image: url(/assets/hobbies/gaming.gif);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .hobbies__img{
+        opacity: 0;
+    }
+    h2{
+        opacity: 0;
+    }
+}
+.music:hover{
+    background-image: url(/assets/hobbies/music.gif);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .hobbies__img{
+        opacity: 0;
+    }
+    h2{
+        opacity: 0;
+    }
+}
+.movie:hover{
+    background-image: url(/assets/hobbies/movie.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .hobbies__img{
+        opacity: 0;
+    }
+    h2{
+        opacity: 0;
+    }
+}
+.walk:hover{
+    background-image: url(/assets/hobbies/walk.gif);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .hobbies__img{
+        opacity: 0;
+    }
+    h2{
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 850px) {
+    .hobbies{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .hobbies__card{
+        width: 350px;
+        height: 200px;
+    }
+}

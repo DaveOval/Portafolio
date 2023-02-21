@@ -24,7 +24,7 @@
     width: 200px;
     border-radius: 40px;
     padding: 30px;
-    transition: all 0.2s ;
+    transition: all 0.2s ease;
 }
 .skills__svg{
     display: flex;
@@ -53,6 +53,9 @@
 .skills__card:hover{
     transform: scale(1.1);
 }
+.rotate{
+    animation: rotate 15s linear infinite;
+}
 
 @media screen and (max-width: 850px) {
     .skills{
@@ -60,6 +63,15 @@
         overflow-x: auto;
         flex-wrap: nowrap;
         justify-content: flex-start;
+    }
+    
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
     
 }
