@@ -391,7 +391,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  gap: 20px;
+  padding: 50px 0;
   width: 100%;
   height: auto;
 }
@@ -407,7 +408,7 @@
 .formacion__card {
   border-radius: 40px;
   height: 100%;
-  padding: 20px;
+  padding: 25px 20px;
   width: 90%;
   max-width: 400px;
   display: flex;
@@ -415,12 +416,13 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
-}
-
-.formacion__card:hover {
   box-shadow: 15px 6px 69px -17px rgba(41, 57, 79, 0.64);
   -webkit-box-shadow: 15px 6px 69px -17px rgba(41, 57, 79, 0.64);
   -moz-box-shadow: 15px 6px 69px -17px rgba(41, 57, 79, 0.64);
+}
+
+.formacion__card:hover {
+  transform: scale(1.02);
 }
 
 .formacion__img {
@@ -432,9 +434,6 @@
      object-fit: cover;
   width: 100%;
   transition: all 0.2s ease-in-out;
-}
-
-.formacion__img:hover img {
   border-radius: 40px 40px 0 0;
 }
 
