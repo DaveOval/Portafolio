@@ -593,6 +593,10 @@
 .contacto__redes img {
   width: 5rem;
   height: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+.contacto__redes img:hover {
+  transform: scale(1.1);
 }
 
 .contacto__form {
