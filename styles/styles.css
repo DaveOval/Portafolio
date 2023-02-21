@@ -167,7 +167,7 @@
   width: 100%;
   max-width: 400px;
   border-radius: 0 0 30px 30px;
-  background-image: url(/assets/CDVH.jpg);
+  background-image: url(/assets/CDVHPNG.png);
   background-size: cover;
   background-position: center;
   -o-object-fit: cover\;;
@@ -306,7 +306,7 @@
 }
 
 .bike:hover {
-  background-image: url(/assets/hobbies/bike-gif.gif);
+  background-image: url(/assetshobbies\b ike-gif.gif);
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
