@@ -40,6 +40,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 .nav li {
   display: inline-block;
@@ -56,39 +57,46 @@
 .hamguerger {
   height: 30px;
   width: 30px;
+  padding: 1.2rem;
   background-image: url(../assets/menu.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: none;
+  transition: all 0.5s ease;
 }
 
 .checkbox {
   display: none;
+  transition: all 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
   .nav {
     flex-direction: column;
     height: 100%;
+    transition: all 0.5s ease;
   }
   .nav li {
-    padding: 10px;
+    width: 80%;
   }
   ul {
     display: none;
     flex-direction: column;
     text-align: center;
     transition: all 0.5s ease;
+    flex-wrap: wrap;
   }
   .hamguerger {
     display: block;
+    transition: all 0.5s ease;
   }
-  .hamguerger:checked ~ ul {
+  .checkbox:checked ~ ul {
     display: block;
+    transition: all 0.5s ease;
   }
-  .hamguerger:checked ~ ul .nav {
-    background-color: red;
+  .checkbox:checked ~ ul .hamguerger {
+    background-image: url(../assets/menu_close.svg);
   }
 }
 .hero {
