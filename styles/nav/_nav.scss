@@ -49,21 +49,14 @@
     }
     ul{
         display: none;
-        flex-direction: column;
         text-align: center;
-        transition: all 0.5s ease;
         flex-wrap: wrap;
     }
     .hamguerger{
         display: block;
-        transition: all 0.5s ease;
     }
     .checkbox:checked ~ ul{
         display: block;
-        transition: all 0.5s ease;
-        .hamguerger{
-            background-image: url(../assets/menu_close.svg);
-        }
     }
 }
     
