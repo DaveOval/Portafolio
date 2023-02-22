@@ -53,33 +53,42 @@
   color: white;
 }
 
-.hide {
-  color: white;
-  font-size: 22px;
-  padding: 16px;
-  cursor: pointer;
+.hamguerger {
+  height: 30px;
+  width: 30px;
+  background-image: url(../assets/menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: none;
 }
-.hide ul {
-  display: block;
+
+.checkbox {
+  display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav {
     flex-direction: column;
-    text-align: center;
-    align-items: center;
     height: 100%;
   }
   .nav li {
-    display: block;
     padding: 10px;
-  }
-  .hide {
-    display: block;
   }
   ul {
     display: none;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .hamguerger {
+    display: block;
+  }
+  .hamguerger:checked ~ ul {
+    display: block;
+  }
+  .hamguerger:checked ~ ul .nav {
+    background-color: red;
   }
 }
 .hero {
@@ -733,6 +742,11 @@
   background-color: green;
   transform: translateY(-4px);
   transform: scale(1.1);
+}
+
+.invalido {
+  background-color: red;
+  color: white;
 }
 
 .footer {

@@ -22,31 +22,41 @@
         color: white;
     }
 }
-.hide{
-    color: white;
-    font-size: 22px;
-    padding: 16px;
-    cursor: pointer;
+.hamguerger{
+    height: 30px;
+    width: 30px;
+    background-image: url(../assets/menu.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
     display: none;
-    ul{
-        display: block;
-    }
 }
-@media (max-width: 768px) {
+.checkbox{
+    display: none;
+}
+@media screen and (max-width: 768px) {
     .nav{
         flex-direction: column;
-        text-align: center;
-        align-items: center;
         height: 100%;
         li{
-            display: block;
             padding: 10px;
         }
     }
-    .hide{
-        display: block;
-    }
     ul{
         display: none;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    .hamguerger{
+        display: block;
+    }
+    .hamguerger:checked ~ ul{
+        display: block;
+        .nav{
+            background-color: red;
+        }
     }
 }
+    
+

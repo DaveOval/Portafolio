@@ -20,6 +20,11 @@
 
     <!-- barras de navegacion -->
     <nav class="nav">
+        <label for="check">
+            <div class="hamguerger">
+            </div>
+        </label>
+        <input type="checkbox" name="check" id="check" class="checkbox">
         <ul>
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#about-me">Acerca de mi</a></li>
@@ -28,9 +33,7 @@
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#contacto">Contacto y CV</a></li>
         </ul>
-        <div class="hide">
-            <span class="material-symbols-outlined">menu</span>
-        </div>
+
     </nav>
 
     <!-- hero -->
@@ -44,9 +47,9 @@
     <section class="about-me" id="about-me">
         <div class="abaout-me__container">
             <h2 class="about-me__title">✌️</h2>
-            <h2 class="about-me__subtitle">Soy David Un placer conocerte.</h2>
+            <h2 class="about-me__subtitle">Un placer conocerte.</h2>
             <p class="abaout-me__text"> 
-                Soy un desarrollador principiante en Flutter y front-end, y estoy emocionado de presentar mi trabajo en este sitio web. Aquí podrás encontrar proyectos que he creado utilizando Flutter y tecnologías front-end, demostrando mi habilidad para diseñar y desarrollar aplicaciones móviles y sitios web interactivos. Espero que disfrutes explorando mi trabajo y no dudes en ponerte en contacto si tienes alguna pregunta o si estás interesado en colaborar conmigo. ¡Gracias por visitar mi portafolio en línea!
+                Tengo 24 años y soy de de Guadalajara Mexico. Soy un desarrollador principiante en Flutter y Front-end, y estoy emocionado de presentar mi trabajo en este sitio web. Aquí podrás encontrar proyectos que he creado utilizando Flutter y tecnologías front-end, demostrando mi habilidad para diseñar y desarrollar aplicaciones móviles y sitios web interactivos. Espero que disfrutes explorando mi trabajo y no dudes en ponerte en contacto si tienes alguna pregunta o si estás interesado en colaborar conmigo. ¡Gracias por visitar mi portafolio en línea!
             </p>
         </div>
         <div class="abaout-me__img" "></div>
@@ -331,36 +334,39 @@
         
         <p>O puedes mandarme un correo.</p>
 
-        <form action="" class="contacto__form">
+        <form   
+            action="https://formsubmit.co/dave_u@outlook.com" method="POST" 
+            method="post" 
+            class="contacto__form">
             
             <div class="form__group field">
-                <input type="text" name="" id="name" class="form__field" placeholder="Name">
+                <input type="text" name="nombre" id="name" class="form__field" placeholder="Name" required data-tipo="name" maxlength="50">
                 <label for="name" class="form__label">Nombre</label>
             </div>
 
             <div class="form__group field">
-                <input type="email" name="" id="email" class="form__field" placeholder="Email">
+                <input type="email" name="correo" id="email" class="form__field" placeholder="Email" required maxlength="50">
                 <label for="email" class="form__label">Correo</label>
             </div>
 
             <div class="form__group field">
-                <input type="email" name="" id="asunto" class="form__field" placeholder="Asunto">
+                <input type="text" name="asunto" id="asunto" class="form__field" placeholder="Asunto" required maxlength="50">
                 <label for="asunto" class="form__label">Asunto</label>
             </div>
 
             <div class="form__group field">
-                <textarea type="textarea" name="mensaje" id="mensaje" class="form__field" placeholder="Mensaje" rows="5"></textarea>
+                <textarea type="textarea" name="mensaje" id="mensaje" class="form__field" placeholder="Mensaje" rows="5" maxlength="300"></textarea>
                 <label for="mensaje" class="form__label">Mensaje</label>
             </div>
             <div class="buttons">
-                <button type="reset" class="btn">Reiniciar</button>
-                <button type="submit" class="btn" disabled>Enviar</button>
+                <button type="reset" class="btn" id="reset">Reiniciar</button>
+                <button type="submit" class="btn" id="enviar">Enviar</button>
             </div>
 
         </form>
 
-        <a href="./assets/CV/CV CDVH.pdf" download class="cv">
-            <p>Descargar mi CV</p>
+        <a href="./assets/CV/CV CDVH.pdf" class="cv" target="_blank">
+            <p>Ver mi CV</p>
         </a>
     </section>
 
@@ -371,12 +377,13 @@
 
 
     <!-- scripts -->
+    <script src="./scripts/app.js" type="module"></script>
     <script src="./scripts/text.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <scrip src="https://code.jquery.com/jquery-1.12.4.min.js"></scrip>
     <script>
-            $(".hide").on('click', function() {
-      $("nav ul").toggle('slow');
-    })
+        $(".hide").on('click', function() {
+        $("nav ul").toggle('slow');
+     })
     </script>
 </body>
 </html>
