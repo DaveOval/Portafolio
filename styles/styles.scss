@@ -17,26 +17,24 @@ $color-azulGris: rgb(41, 57, 79);
 
 html{
   scroll-behavior: smooth;
+  scroll-padding: 50px;
   
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #29394f #ffffff;
+    scrollbar-color: #29394f ;
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 12px;
+    width: 15px;
   }
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
 
   *::-webkit-scrollbar-thumb {
     background-color: #29394f;
-    border-radius: 10px;
-    border: 0px none #cababa;
+    border-radius: 0px;
+    border: 3px outset #2e4056;
   }
 }
 *{
@@ -46,4 +44,10 @@ html{
 body{
   background-color: #D0DEE4;
 }
+
+// @media screen and (max-width: 768px) {
+//   html{
+//     scroll-padding: auto;
+//   }
+// }
 
