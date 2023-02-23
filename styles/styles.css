@@ -158,11 +158,11 @@
 }
 
 .abaout-me__text {
-  padding-top: 10px;
-  width: 80%;
+  padding-top: 20px;
+  width: 100%;
   max-width: 1300px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .about-me__title {
