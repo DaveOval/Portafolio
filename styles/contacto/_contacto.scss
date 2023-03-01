@@ -122,6 +122,9 @@
   .btn:active{
     transform: translateY(0px);
   }
+  .contacto__error{
+    color: red;
+  }
   .cv{
     display: flex;
     flex-direction: row;

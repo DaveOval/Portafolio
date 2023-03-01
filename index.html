@@ -392,21 +392,25 @@
             <div class="form__group field">
                 <input type="text" name="nombre" id="name" class="form__field" placeholder="Name" required data-tipo="name" maxlength="50">
                 <label for="name" class="form__label">Nombre</label>
+                <span class="contacto__error1 contacto__error"></span>
             </div>
 
             <div class="form__group field">
                 <input type="email" name="correo" id="email" class="form__field" placeholder="Email" required maxlength="50">
                 <label for="email" class="form__label">Correo</label>
+                <span class="contacto__error2 contacto__error"></span>
             </div>
 
             <div class="form__group field">
                 <input type="text" name="asunto" id="asunto" class="form__field" placeholder="Asunto" required maxlength="50">
                 <label for="asunto" class="form__label">Asunto</label>
+                <span class="contacto__error3 contacto__error"></span>
             </div>
 
             <div class="form__group field">
                 <textarea type="textarea" name="mensaje" id="mensaje" class="form__field" placeholder="Mensaje" rows="5" maxlength="300" required></textarea>
                 <label for="mensaje" class="form__label">Mensaje</label>
+                <span class="contacto__error4 contacto__error"></span>
             </div>
             <div class="buttons">
                 <button type="reset" class="btn" id="reset">Reiniciar</button>
@@ -427,9 +431,9 @@
 
 
     <!-- scripts -->
-    <script src="./scripts/app.js" type="module"></script>
-    <script src="./scripts/text.js"></script>
-    <scrip src="https://code.jquery.com/jquery-1.12.4.min.js"></scrip>
+    <script src="./scripts/app-min.js" type="module"></script>
+    <script src="./scripts/text-min.js"></script>
+    <!-- <scrip src="https://code.jquery.com/jquery-1.12.4.min.js"></scrip> -->
     <!-- <script>
         $(".hide").on('click', function() {
         $("nav ul").toggle('slow');
