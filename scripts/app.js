@@ -4,9 +4,8 @@ const inputEmail = document.querySelector('#email');
 const inputAsunto = document.querySelector('#asunto');
 const inputMensaje = document.querySelector('#mensaje');
 const btnReset = document.querySelector('#reset');
+const btnEnviar = document.querySelector('#enviar');
 
-//contador para validar el correo
-let contador = 0;
 
 //escuchadores para la funcion
 inputName.addEventListener('blur', () => {
@@ -36,8 +35,7 @@ function validarName(inputName){
     if(re.test(inputName.value)){
         inputName.classList.remove('invalido');
         console.log('Nombre valido');
-        contador++;
-        console.log(contador);
+        return true;
     }else{
         inputName.classList.add('invalido');
         console.log('Nombre invalido');
@@ -48,8 +46,7 @@ function validarEmail(inputEmail){
     if(re.test(inputEmail.value)){
         inputEmail.classList.remove('invalido');
         console.log('Email valido');
-        contador++;
-        console.log(contador);
+        return true;
     }else{
         inputEmail.classList.add('invalido');
         console.log('Email invalido');
@@ -60,8 +57,7 @@ function validarAsunto(inputAsunto){
     if(re.test(inputAsunto.value)){
         inputAsunto.classList.remove('invalido');
         console.log('Asunto valido');
-        contador++;
-        console.log(contador);
+        return true;
     }else{
         inputAsunto.classList.add('invalido');
         console.log('Asunto invalido');
@@ -72,11 +68,13 @@ function validarMensaje(inputMensaje){
     if(re.test(inputMensaje.value)){
         inputMensaje.classList.remove('invalido');
         console.log('Mensaje valido');
-        contador++;
-        console.log(contador);
+        return true;
     }else{
         inputMensaje.classList.add('invalido');
         console.log('Mensaje invalido');
     }
 }
 
+if(inputName === true){
+    btnEnviar.disabled = false;
+}

@@ -488,7 +488,9 @@
 .experiencia__card {
   margin: auto;
   width: 85%;
-  height: 500px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem;
   overflow: hidden;
   box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 10px 10px 40px -3px rgba(0, 0, 0, 0.79);
@@ -521,6 +523,20 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.experiencia__tec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.experiencia__tec__img {
+  height: 3.5rem;
 }
 
 .buttons {
@@ -537,10 +553,13 @@
   color: #29394F;
   padding: 1rem 2rem;
   transition: all 0.3s;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .button:hover {
-  border-bottom: 8px solid black;
   transform: translateY(-4px);
   font-weight: 900;
 }
@@ -748,7 +767,7 @@
 }
 
 .invalido {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.8039215686);
   color: white;
 }
 
