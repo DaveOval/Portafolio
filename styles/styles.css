@@ -91,6 +91,9 @@
   .checkbox:checked ~ ul {
     display: block;
   }
+  .checkbox:checked ~ .hamguerger {
+    background-image: url(../assets/menu_close.svg);
+  }
 }
 .hero {
   display: flex;
